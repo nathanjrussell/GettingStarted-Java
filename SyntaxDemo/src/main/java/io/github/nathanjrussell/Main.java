@@ -5,23 +5,21 @@ package io.github.nathanjrussell;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {//TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
+        EmployeeInfo nate = new EmployeeInfo(
+                "Nathan",
+                "Russell",
+                1986,
+                2,
+                17,
+                "njruss01@louisville.edu",
+                "859-yea-right",
+                "111 Cool Way",
+                "Louisville",
+                "KY",
+                "40408");
 
-        Person nathan = new Person(39,"Nathan","Russell");
-        System.out.println(nathan.getAge());
 
-
-        Person[] peopleArray = new Person[5];
-        peopleArray[0] = nathan;
-        peopleArray[1] = new Person(20,"Jiwoo","Hang");
-        peopleArray[2] = new Person(19,"Marissa","McCubbin");
-        peopleArray[3] = new Person(21,"Kamil","Zavala");
-        peopleArray[4] = new Person(28,"Keaston","Edwards");
-
-        for (Person person : peopleArray) {
-            System.out.println("Here is a new person shown below!");
-            System.out.println("\t" + person.getFirstName() + " " + person.getLastName());
-            System.out.println("\tAge: " + person.getAge());
-        }
+        )
 
     }
 }
